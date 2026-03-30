@@ -1,62 +1,162 @@
 body {
-  color: black;
-  background-color: red;
-  color: white;
+  background-color: #F5F0E8;
+  color: #2C2C2C;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .main-news img{
-  width: 95%;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
 }
-
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #1A1A1A;
+}
+h1 {
+  padding-left: 20px;
+  border-left: 5px solid #006600;
+  margin: 25px 20px 15px 20px;
+}
 nav > ul {
+  margin: 0;
+  padding: 0 20px;
   display: flex;
   justify-content: space-around;
-  height: 100px;
+  height: 70px;
   align-items: center;
-  background-color: black;
+  background-color: #1A1A1A;
   color: white;
+  font-family: 'Inter', sans-serif;
+  border-bottom: 4px solid #BB0000;
 }
+nav > ul > li:first-child {
+  font-family : 'Playful Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-left: 4px solid #006600;
+  padding-left: 10px;
+}
+
 li {
   list-style-type: none;
 }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+nav a:hover {
+  background-color: #BB0000;
+}
 .latest {
   display: flex;
- justify-content: space-around;
+ justify-content: space-between;
+ gap: 20px;
+ padding: 0 20px;
+ margin-bottom: 30px;
 }
 .sideNews{
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
+  flex: 1;
+  padding-left: 20px;
 }
 .card {
-  width: 48%;
-  
+  width: 40%;
+  background-color: white;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 .card img{
   width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
 }
-.card h3{
-  margin: 5px 0;
+.card h3 {
+  margin: 8px 0 4px 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  color: #1A1A1A;
 }
-.card p{
-  font-size: 14px;
+.card p {
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.5;
 }
 .main-news{
   flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  border-top: 5px solid #BB0000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-.sideNews{
+/* .sideNews{
   flex: 1;
-}
+} */
 a {
   color: white
 }
-.lifestyle{
-  display: flex;
-  justify-content: space-around;
- 
+footer {
+  background-color: #1A1A1A;
+  color: white;
+  margin-top: 40px;
+  padding: 40px 20px 20px 20px;
+  border-top: 4px solid #BB0000;
 }
-.lifestyle-cards {
-  width: 30;
-  gap: 10px;
-  
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  color: white;
+}
+.footer-tagline {
+  color: #999999;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+.footer-links a {
+  color: #CCCCCC;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.footer-links a:hover {
+  color: #BB0000;
+}
+.footer-copy {
+  color: #666666;
+  font-size: 12px;
+  margin-top: 10px;
+  border-top: 1px solid #333333;
+  padding-top: 15px;
 }

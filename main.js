@@ -223,46 +223,46 @@ if(document.querySelector('.health')){
   })
 }
 
-function getLifestyleNews(){
-  fetch('https://api.worldnewsapi.com/search-news?api-key=ccea70b1d5714499945207a24f04862a&language=en&source-country=ke&categories=business')
-  .then(res =>res.json())
-  .then( data => {
-    if(!data.news) return
-    console.log(data.news)
-    let articles = data.news
+// function getLifestyleNews(){
+//   fetch('https://api.worldnewsapi.com/search-news?api-key=ccea70b1d5714499945207a24f04862a&language=en&source-country=ke&categories=business')
+//   .then(res =>res.json())
+//   .then( data => {
+//     if(!data.news) return
+//     console.log(data.news)
+//     let articles = data.news
 
-    const lifecards = document.querySelectorAll('.lifestyle-cards')
-    lifecards.forEach((lifecard, index) => {
-      let article = articles[index]
+//     const lifecards = document.querySelectorAll('.lifestyle-cards')
+//     lifecards.forEach((lifecard, index) => {
+//       let article = articles[index]
 
-      if(!article) return
+//       if(!article) return
 
-      lifecard.querySelector('img').src = article.image || "https://dummyimage.com/300"
-      lifecard.querySelector('h4').innerText = article.title
+//       lifecard.querySelector('img').src = article.image || "https://dummyimage.com/300"
+//       lifecard.querySelector('h4').innerText = article.title
 
-      lifecard.querySelector('img').onclick = function(){
-        window.open(article.url, '_blank')
-      }
-    })
-  })
-}
+//       lifecard.querySelector('img').onclick = function(){
+//         window.open(article.url, '_blank')
+//       }
+//     })
+//   })
+// }
 
 if(window.location.pathname.includes("index.html")){
   getNews('politics')
-  getLifestyleNews()
+  // getLifestyleNews()
 }
 
 if(window.location.pathname.includes("technology.html")){
   getNews('technology')
-  getLifestyleNews()
+  // getLifestyleNews()
 }
 
 if(window.location.pathname.includes("health.html")){
   getNews('health')
-  getLifestyleNews()
+  // getLifestyleNews()
 }
 
 if(window.location.pathname.includes("sports.html")){
   getNews('sports')
-  getLifestyleNews()
+  // getLifestyleNews()
 }
