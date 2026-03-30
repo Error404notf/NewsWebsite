@@ -1,0 +1,62 @@
+body {
+  color: black;
+  background-color: red;
+  color: white;
+}
+
+.main-news img{
+  width: 95%;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+li {
+  list-style-type: none;
+}
+.latest {
+  display: flex;
+ justify-content: space-around;
+}
+.sideNews{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card {
+  width: 48%;
+  
+}
+.card img{
+  width: 100%;
+}
+.card h3{
+  margin: 5px 0;
+}
+.card p{
+  font-size: 14px;
+}
+.main-news{
+  flex: 1;
+}
+.sideNews{
+  flex: 1;
+}
+a {
+  color: white
+}
+.lifestyle{
+  display: flex;
+  justify-content: space-around;
+ 
+}
+.lifestyle-cards {
+  width: 30;
+  gap: 10px;
+  
+}
