@@ -23,10 +23,6 @@ getNews(category)
 
 This function:
 
-Fetches news
-
-This function:
-
 Fetches news dynamically based on the selected category
 Extracts the main headline and supporting articles
 Updates the DOM in real time without reloading the page
