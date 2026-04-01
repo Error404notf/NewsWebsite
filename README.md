@@ -2,7 +2,7 @@
 
 A responsive news web application that fetches and displays real-time news from different categories like politics, technology, health, and sports using an external API. Users can explore trending stories with a clean, modern UI inspired by real-world news platforms.
 
-👉 Live Demo: (add your deployed link here — we can do this next if you want)
+
 
 💻 How It's Made
 
@@ -17,7 +17,9 @@ Clean typography for readability
 Interactive UI elements like hover effects and card animations
 Subtle motion using transform: translateY(-4px) to improve user experience
 
-The core functionality is powered by JavaScript. I created a reusable function:
+The core functionality is powered by JavaScript. 
+
+I created a reusable function:
 
 getNews(category)
 
@@ -37,13 +39,12 @@ Refactored repeated functions into a single reusable function (getNews) to follo
 
 Added defensive programming:
 
-if(!data.news) return
-
-to prevent the app from crashing when the API fails or rate limits are hit
+if(!data.news) return to prevent the app from crashing when the API fails or rate limits are hit
 
 Used optional chaining (?.) to safely handle missing data from the API
 Reduced unnecessary API calls to avoid hitting rate limits (429 errors)
 Improved UI performance with lightweight CSS animations instead of heavy libraries
+
 📚 Lessons Learned
 
 This project taught me a lot about real-world frontend development, especially working with APIs.
@@ -74,11 +75,13 @@ transform: translateY(-4px);
 helped me understand how subtle motion improves user experience by making the interface feel interactive and alive.
 
 🚀 What I’d Improve Next
+
 Add loading states (spinners) while fetching data
 Implement error messages in the UI instead of just console logs
 Integrate video embedding (e.g., YouTube iframes) for richer content
 Add search functionality for custom news queries
 Migrate to React for better state management and scalability
+
 🌱 Final Thoughts
 
 This project pushed me to think like a real developer — not just writing code, but handling failures, improving user experience, and structuring logic efficiently.
