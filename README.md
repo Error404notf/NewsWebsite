@@ -39,7 +39,7 @@ Refactored repeated functions into a single reusable function (getNews) to follo
 
 Added defensive programming:
 
-if(!data.news) return to prevent the app from crashing when the API fails or rate limits are hit
+if(!data.news) => return to prevent the app from crashing when the API fails or rate limits are hit
 
 Used optional chaining (?.) to safely handle missing data from the API
 Reduced unnecessary API calls to avoid hitting rate limits (429 errors)
@@ -58,11 +58,11 @@ Handle failures gracefully
 Avoid excessive requests
 
 Defensive coding is essential
-I learned that you should never assume data exists. Errors like:
+I learned that you should never assume data exists. 
 
-Cannot read properties of undefined (reading '0')
+Errors like:
 
-helped me understand the importance of validating data before using it.
+Cannot read properties of undefined (reading '0') => helped me understand the importance of validating data before using it.
 
 DOM manipulation becomes powerful with dynamic data
 Instead of hardcoding content, I now understand how to render UI from live data — which is a key concept in frameworks like React (something I’m working toward in my MERN journey).

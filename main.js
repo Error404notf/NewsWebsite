@@ -247,22 +247,15 @@ if(document.querySelector('.health')){
 //   })
 // }
 
-if(window.location.pathname.includes("index.html")){
-  getNews('politics')
-  // getLifestyleNews()
-}
+const path = window.location.pathname;
 
-if(window.location.pathname.includes("technology.html")){
-  getNews('technology')
-  // getLifestyleNews()
-}
-
-if(window.location.pathname.includes("health.html")){
-  getNews('health')
-  // getLifestyleNews()
-}
-
-if(window.location.pathname.includes("sports.html")){
-  getNews('sports')
-  // getLifestyleNews()
+// Check for both the root path (Netlify) and the explicit file (Local)
+if (path === '/' || path.includes("index.html")) {
+  getNews('politics');
+} else if (path.includes("technology")) {
+  getNews('technology');
+} else if (path.includes("health")) {
+  getNews('health');
+} else if (path.includes("sports")) {
+  getNews('sports');
 }
