@@ -2,7 +2,7 @@
 
 A responsive news web application that fetches and displays real-time news from different categories like politics, technology, health, and sports using an external API. Users can explore trending stories with a clean, modern UI inspired by real-world news platforms.
 
-
+Link to project: https://localnewswebsite.netlify.app/ 
 
 💻 How It's Made
 
